@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  pgbouncer:
+    container_name: pgbouncer
+    build: .
+    image: pgbouncer:1.11.0
+    restart: unless-stopped
+    volumes:
+      - ./pgbouncer:/etc/pgbouncer
+    ports:
+      - "6543:6543"
