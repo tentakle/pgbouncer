@@ -9,4 +9,4 @@ services:
     volumes:
       - ./pgbouncer:/etc/pgbouncer
     ports:
-      - "6543:6543"
+      - "6432:6432"
